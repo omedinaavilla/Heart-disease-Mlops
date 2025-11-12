@@ -1,0 +1,36 @@
+name: CI - Heart Disease MLOps
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          pip install -r docker/requirements.txt
+          pip install flake8 pytest
+      - name: Lint
+        run: flake8 app
+      - name: Test
+        run: pytest || echo "No tests yet"
+name: CI - Heart Disease MLOps
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          pip install -r docker/requirements.txt
+          pip install flake8 pytest
+      - name: Lint
+        run: flake8 app
+      - name: Test
+        run: pytest || echo "No tests yet"

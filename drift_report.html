@@ -1,0 +1,5 @@
+from evidently.report import Report
+from evidently.metric_preset import DataDriftPreset
+report = Report(metrics=[DataDriftPreset()])
+report.run(reference_data=X_train, current_data=X_test)
+report.save_html("drift_report.html")
