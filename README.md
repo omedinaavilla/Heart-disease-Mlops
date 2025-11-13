@@ -13,7 +13,6 @@ Incluye todo el ciclo de vida de un modelo de ML: desde el análisis exploratori
 ---
 
 ##  Estructura del Proyecto  
-
 ``` 
 heart-disease-mlops/
 │── data/
