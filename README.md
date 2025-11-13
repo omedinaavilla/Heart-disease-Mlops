@@ -15,32 +15,31 @@ Incluye todo el ciclo de vida de un modelo de ML: desde el análisis exploratori
 ##  Estructura del Proyecto  
 
 heart-disease-mlops/
+│── data/
+│   └── heart.csv                 # Dataset original (EDA)
 │
-├── data/
-│ └── heart.csv # Dataset original (EDA)
+│── notebooks/
+│   ├── 1_data_leakage.ipynb      # Análisis de fuga de datos (data leakage)
+│   └── 2_model_training.ipynb    # Entrenamiento y evaluación de modelos
 │
-├── notebooks/
-│ ├── 1_data_leakage.ipynb # Análisis de fuga de datos (data leakage)
-│ ├── 2_model_training.ipynb # Entrenamiento y evaluación de modelos
+│── models/
+│   └── logistic_regression_final.joblib   # Modelo final entrenado y exportado
 │
-├── models/
-│ └── logistic_regression_final.joblib # Modelo final entrenado y exportado
+│── app/
+│   ├── api.py                    # API principal FastAPI
+│   └── __init__.py
 │
-├── app/
-│ ├── api.py # API principal FastAPI
-│ └── init.py
+│── docker/
+│   ├── Dockerfile                # Imagen Docker de la aplicación
+│   └── requirements.txt          # Dependencias del proyecto
 │
-├── docker/
-│ ├── Dockerfile # Imagen Docker de la aplicación
-│ └── requirements.txt # Dependencias del proyecto
-│
-├── k8s/
-│ ├── deployment.yaml # Despliegue del contenedor (Kubernetes)
-│ └── service.yaml # Servicio LoadBalancer
+│── k8s/
+│   ├── deployment.yaml           # Despliegue del contenedor (Kubernetes)
+│   └── service.yaml              # Servicio LoadBalancer
 │
 └── .github/
-└── workflows/
-└── deploy.yml # Pipeline CI/CD (GitHub Actions)
+    └── workflows/
+        └── deploy.yml            # Pipeline CI/CD (GitHub Actions)
 
 
 ---
