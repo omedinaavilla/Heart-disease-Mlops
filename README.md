@@ -60,8 +60,9 @@ heart-disease-mlops/
 | **Docker** | Contenerización de la aplicación |
 | **Kubernetes (Minikube / Docker Desktop)** | Orquestación de contenedores local |
 | **GitHub Actions** | Automatización del pipeline de CI/CD |
-``` 
+
 ---
+
 
 ##  Componentes Clave  
 
