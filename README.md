@@ -11,6 +11,7 @@ Este proyecto aplica prácticas modernas de **Machine Learning Operations (MLOps
 Incluye todo el ciclo de vida de un modelo de ML: desde el análisis exploratorio (EDA) hasta el despliegue automatizado mediante contenedores y orquestación local.  
 
 ---
+``` 
 
 ##  Estructura del Proyecto  
 
@@ -56,7 +57,7 @@ heart-disease-mlops/
 | **Docker** | Contenerización de la aplicación |
 | **Kubernetes (Minikube / Docker Desktop)** | Orquestación de contenedores local |
 | **GitHub Actions** | Automatización del pipeline de CI/CD |
-
+``` 
 ---
 
 ##  Componentes Clave  
