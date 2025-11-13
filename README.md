@@ -1,4 +1,5 @@
 # Heart Disease Prediction — MLOps Project  
+## Omar Medina y Andrés España
 
  *Implementación completa de un flujo MLOps local con FastAPI, Docker, Kubernetes y GitHub Actions.*
 
