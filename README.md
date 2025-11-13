@@ -2,6 +2,9 @@
 
  *Implementación completa de un flujo MLOps local con FastAPI, Docker, Kubernetes y GitHub Actions.*
 
+ #DEMO 
+ [Ver video](/video2681018765.mp4)
+
 ---
 
 ##  Descripción General  
