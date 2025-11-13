@@ -13,10 +13,8 @@ Incluye todo el ciclo de vida de un modelo de ML: desde el análisis exploratori
 ---
 
 ##  Estructura del Proyecto  
+
 ``` 
-
-
-
 heart-disease-mlops/
 │── data/
 │   └── heart.csv                 # Dataset original (EDA)
@@ -43,7 +41,7 @@ heart-disease-mlops/
 └── .github/
     └── workflows/
         └── deploy.yml            # Pipeline CI/CD (GitHub Actions)
-``` 
+```
 
 ---
 
