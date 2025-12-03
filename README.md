@@ -1,6 +1,11 @@
 # Heart Disease Prediction — MLOps Project  
+## Omar Medina y Andrés España
 
  *Implementación completa de un flujo MLOps local con FastAPI, Docker, Kubernetes y GitHub Actions.*
+
+## DEMO 
+<video src=https://github.com/user-attachments/assets/3bb13821-e5e7-4815-a2a1-2296130f64e9 controls width="200"></video>
+ 
 
 ---
 
@@ -13,35 +18,34 @@ Incluye todo el ciclo de vida de un modelo de ML: desde el análisis exploratori
 ---
 
 ##  Estructura del Proyecto  
-
+``` 
 heart-disease-mlops/
+│── data/
+│   └── heart.csv                 # Dataset original (EDA)
 │
-├── data/
-│ └── heart.csv # Dataset original (EDA)
+│── notebooks/
+│   ├── 1_data_leakage.ipynb      # Análisis de fuga de datos (data leakage)
+│   └── 2_model_training.ipynb    # Entrenamiento y evaluación de modelos
 │
-├── notebooks/
-│ ├── 1_data_leakage.ipynb # Análisis de fuga de datos (data leakage)
-│ ├── 2_model_training.ipynb # Entrenamiento y evaluación de modelos
+│── models/
+│   └── logistic_regression_final.joblib   # Modelo final entrenado y exportado
 │
-├── models/
-│ └── logistic_regression_final.joblib # Modelo final entrenado y exportado
+│── app/
+│   ├── api.py                    # API principal FastAPI
+│   └── __init__.py
 │
-├── app/
-│ ├── api.py # API principal FastAPI
-│ └── init.py
+│── docker/
+│   ├── Dockerfile                # Imagen Docker de la aplicación
+│   └── requirements.txt          # Dependencias del proyecto
 │
-├── docker/
-│ ├── Dockerfile # Imagen Docker de la aplicación
-│ └── requirements.txt # Dependencias del proyecto
-│
-├── k8s/
-│ ├── deployment.yaml # Despliegue del contenedor (Kubernetes)
-│ └── service.yaml # Servicio LoadBalancer
+│── k8s/
+│   ├── deployment.yaml           # Despliegue del contenedor (Kubernetes)
+│   └── service.yaml              # Servicio LoadBalancer
 │
 └── .github/
-└── workflows/
-└── deploy.yml # Pipeline CI/CD (GitHub Actions)
-
+    └── workflows/
+        └── deploy.yml            # Pipeline CI/CD (GitHub Actions)
+```
 
 ---
 
@@ -59,6 +63,7 @@ heart-disease-mlops/
 | **GitHub Actions** | Automatización del pipeline de CI/CD |
 
 ---
+
 
 ##  Componentes Clave  
 
